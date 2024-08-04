@@ -4,7 +4,7 @@ require'nvim-treesitter.configs'.setup {
 	"c", "elixir", "go",
 	"java", "ocaml", "ruby",
 	"rust", "lua", "vim",
-	"vimdoc", "query", "typescript"
+	"vimdoc", "query", "typescript", "markdown", "gleam"
 },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)

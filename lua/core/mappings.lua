@@ -2,9 +2,8 @@
 vim.g.mapleader = " "
 
 -- set df to normal mode
-vim.keymap.set("i", "df", "<Esc>", {})
-vim.keymap.set("n", "df", "<Esc>", {})
-vim.keymap.set("v", "df", "<Esc>", {})
+local tonormal = "df"
+vim.keymap.set("i", tonormal, "<Esc><cmd>w<cr>", {})
 
 -- open up netrw
 -- overidden by neotree
@@ -43,3 +42,11 @@ vim.keymap.set("n", "<C-y>", "kzz", {})
 -- buffer
 vim.keymap.set("n", "<leader>bn", vim.cmd.bn)
 vim.keymap.set("n", "<leader>bp", vim.cmd.bp)
+
+
+-- append(golang) 
+vim.keymap.set("n", "<leader>goa", "viwo<Esc>dwpa = append(<Esc>pa, )<Esc>i")
+
+-- html
+-- vim.keymap.set("n", "<leader>ht", "viwodi<><Esc>h<Esc>pyy<Esc>Pja/<Esc>k")
+vim.keymap.set("n", "<leader>ht", "viwodi<><Esc>h<Esc>pla<><Esc>hpbi/<Esc>ba")

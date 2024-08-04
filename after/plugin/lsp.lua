@@ -20,7 +20,7 @@ require('mason-lspconfig').setup({
 	  'tsserver', 'rust_analyzer', 'bashls',
 	  'cssls', 'clojure_lsp',
 	  'dockerls', 'elixirls', 'gopls',
-	  'html', 'jsonls', 'jdtls', 'lua_ls',
+	  'html', 'jsonls', 'jdtls', 'lua_ls', "prismals",
 	  'pyright', 'solargraph', 'tailwindcss',
   },
   handlers = {

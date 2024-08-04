@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/jasonlucero/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["gleam.vim"] = {
+    loaded = true,
+    path = "/Users/jasonlucero/.local/share/nvim/site/pack/packer/start/gleam.vim",
+    url = "https://github.com/gleam-lang/gleam.vim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/jasonlucero/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -110,6 +115,7 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["neo-tree.nvim"] = {
+    config = { "\27LJ\2\n|\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15filesystem\1\0\0\19filtered_items\1\0\0\1\0\1\18hide_dotfiles\1\nsetup\rneo-tree\frequire\0" },
     loaded = true,
     path = "/Users/jasonlucero/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
@@ -159,6 +165,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jasonlucero/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/jasonlucero/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 
@@ -167,6 +178,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
+-- Config for: neo-tree.nvim
+time([[Config for neo-tree.nvim]], true)
+try_loadstring("\27LJ\2\n|\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15filesystem\1\0\0\19filtered_items\1\0\0\1\0\1\18hide_dotfiles\1\nsetup\rneo-tree\frequire\0", "config", "neo-tree.nvim")
+time([[Config for neo-tree.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
